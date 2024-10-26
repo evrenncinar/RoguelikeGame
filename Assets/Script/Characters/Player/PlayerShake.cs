@@ -1,12 +1,10 @@
 using System;
-using MilkShake;
+using Cinemachine;
 using UnityEngine;
 
 public class PlayerShake : MonoBehaviour
 {
-    [SerializeField] Shaker _shakeCamera;
-    [SerializeField] ShakePreset _shakerPreset;
-
+    [SerializeField] CinemachineVirtualCamera _shakeCamera;
     private float _shakeTimer;
     private float _shakeTimerTotal;
     private float _startingIntensity;
@@ -42,7 +40,23 @@ public class PlayerShake : MonoBehaviour
     }
     
     void ShakeCamera(){
-        _shakeCamera.Shake(_shakerPreset);
+        CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin = _shakeCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = _onShootintensity;
+        _shakeTimer = _onShoottime;
+        _shakeTimerTotal = _onShoottime;
+        _startingIntensity = cinemachineBasicMultiChannelPerlin.m_AmplitudeGain;
+    }
+    
+
+    void Update() {
+        if(_shakeTimer > 0)
+        {
+            _shakeTimer -= Time.deltaTime;
+
+            CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin = _shakeCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+
+            cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(_startingIntensity, 0f, 1 - (_shakeTimer / _shakeTimerTotal));   
+        }
     }
 
 
