@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class SkeletonBulletScript : MonoBehaviour
+public class EnemyBulletScript : MonoBehaviour
 {
     private Vector3 _startPosition;
     private float _range;

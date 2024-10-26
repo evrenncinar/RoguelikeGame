@@ -16,6 +16,7 @@ public abstract class BaseEnemy : MonoBehaviour
     protected virtual void Start()
     {
         _enemyAnimation = GetComponent<EnemyAnimation>();
+        _enemyHealt = GetComponent<EnemyHealt>();
         _playerTarget = GameObject.FindAnyObjectByType<PlayerMovement>().transform;
         ChangeState(new EnemySpawnState(this, _enemyAnimation));
     }

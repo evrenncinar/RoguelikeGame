@@ -48,7 +48,7 @@ public class SkeletonEnemy : BaseEnemy
                 Rigidbody2D rb = newBone.GetComponent<Rigidbody2D>();
                 rb.velocity = direction * _boneBulletSO._speed;
 
-                SkeletonBulletScript _skeletonBulletScript = newBone.GetComponent<SkeletonBulletScript>();
+                EnemyBulletScript _skeletonBulletScript = newBone.GetComponent<EnemyBulletScript>();
                 _skeletonBulletScript.SetDamage(_boneBulletSO._damage);
                 _skeletonBulletScript.SetRange(_boneBulletSO._range);
 
