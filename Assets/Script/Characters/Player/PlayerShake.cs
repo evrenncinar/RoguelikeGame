@@ -14,8 +14,6 @@ public class PlayerShake : MonoBehaviour
     [SerializeField] float _onShootintensity = 2f;
     [Range(0,2f)]
     [SerializeField] float _onShoottime = .1f;
-    [Range(0,50f)]
-    [SerializeField] float _onShootfrequency = .1f;
 
     private void OnEnable() 
     {

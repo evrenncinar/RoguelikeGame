@@ -1672,7 +1672,6 @@ MonoBehaviour:
   _shakeCamera: {fileID: 1221782540}
   _onShootintensity: 2
   _onShoottime: 0.1
-  _onShootfrequency: 5
 --- !u!1 &688425883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4271,7 +4270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6257968324069025810, guid: 57cd7496adfd14540980a6d28faa6d1d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57cd7496adfd14540980a6d28faa6d1d, type: 3}

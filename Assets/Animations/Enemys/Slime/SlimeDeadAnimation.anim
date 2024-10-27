@@ -58,7 +58,7 @@ AnimationClip:
     - time: 0.16666667
       value: {fileID: 696427256, guid: e30bcf0c29459439eb4ec91ba81b25bb, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 09010d2aca573f64b928e3085af0ef11, type: 3}
+      value: {fileID: 21300000, guid: e423b5e5044af4f6b8b4c059ee63a77e, type: 3}
     attribute: m_Sprite
     path: SlimeVisual
     classID: 212
@@ -87,7 +87,7 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 247082664, guid: e30bcf0c29459439eb4ec91ba81b25bb, type: 3}
     - {fileID: 696427256, guid: e30bcf0c29459439eb4ec91ba81b25bb, type: 3}
-    - {fileID: 21300000, guid: 09010d2aca573f64b928e3085af0ef11, type: 3}
+    - {fileID: 21300000, guid: e423b5e5044af4f6b8b4c059ee63a77e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
