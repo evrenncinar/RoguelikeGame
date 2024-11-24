@@ -34,6 +34,7 @@ public class ZombieBulletScript : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
+        if(destroyed){return;}
         if(other.gameObject.TryGetComponent(out PlayerHealth _playerHealt))
         {
             _playerHealt.TakeDamage(_damage, transform.position);

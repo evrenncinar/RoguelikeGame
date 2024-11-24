@@ -37,6 +37,7 @@ public class EnemyBulletScript : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if(destroyed){return;}
         if(other.CompareTag(AllConst.Tags.Wall))
         {
             destroyThisObject();
